@@ -1,0 +1,14 @@
+{
+  "name": "techchallenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "chai": "^4.3.0",
+    "mocha": "^8.3.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
