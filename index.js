@@ -16,7 +16,16 @@ export const printNumsAboveAndBelow = (nums, value) => {
     return "above: " + above + ", below: " + below;
 };
 
-// #2 Rotate the characters in a string by a given input and have the overflow appear at the beginning, e.g. “MyString” rotated by 2 is “ngMyStri”.
+/* #2 Rotate the characters in a string by a given input 
+and have the overflow appear at the beginning, e.g. “MyString” 
+rotated by 2 is “ngMyStri”.*/
+
+export const rotateString = (stringToRotate, amountToRotate) => {
+    const displacement = stringToRotate.length - amountToRotate;
+    return stringToRotate.slice(displacement) + stringToRotate.slice(0, displacement)
+}
+
+console.log(rotateString("MyString", 2))
 
 // #3 If you could change 1 thing about your favorite framework/language/platform (pick one), what would it be?
 
